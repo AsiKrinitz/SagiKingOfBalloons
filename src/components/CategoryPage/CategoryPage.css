@@ -1,0 +1,91 @@
+.category-hero {
+  padding: 4rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInDown 1s ease-out;
+}
+
+.category-headline {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  background: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  text-shadow: 0px 10px 30px rgba(255, 117, 140, 0.3);
+}
+
+.category-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.category-back-button {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.2s;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.category-back-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(-5px);
+}
+
+.category-gallery-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  flex: 1;
+}
+
+.category-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+.category-gallery-card {
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+  position: relative;
+}
+
+.category-gallery-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 117, 140, 0.2);
+  border-color: rgba(255, 117, 140, 0.3);
+}
+
+.category-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+}
+
+.category-balloon-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.category-gallery-card:hover .category-balloon-image {
+  transform: scale(1.08);
+}

@@ -1,0 +1,15 @@
+.global-header {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo-placeholder {
+  display: block;
+  height: 60px; /* Adjusted to fit a good sized logo eventually */
+  min-width: 150px;
+  text-decoration: none;
+}
