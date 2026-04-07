@@ -9,13 +9,13 @@
 .category-headline {
   font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: 800;
-  background: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
+  background: linear-gradient(to right, var(--accent-color) 0%, var(--accent-light) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1.1;
   margin-bottom: 0.5rem;
-  text-shadow: 0px 10px 30px rgba(255, 117, 140, 0.3);
+  text-shadow: 0px 10px 30px var(--glow-color);
 }
 
 .category-subtitle {
@@ -24,9 +24,9 @@
 }
 
 .category-back-button {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(212, 175, 55, 0.1);
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(212, 175, 55, 0.3);
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
   cursor: pointer;
@@ -38,7 +38,7 @@
 }
 
 .category-back-button:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(212, 175, 55, 0.2);
   transform: translateX(-5px);
 }
 
@@ -61,15 +61,15 @@
   overflow: hidden;
   background: var(--card-bg);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.2);
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
   position: relative;
 }
 
 .category-gallery-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 117, 140, 0.2);
-  border-color: rgba(255, 117, 140, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 20px var(--glow-color);
+  border-color: rgba(212, 175, 55, 0.5);
 }
 
 .category-image-wrapper {

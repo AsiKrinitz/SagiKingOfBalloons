@@ -1,0 +1,49 @@
+.prices-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.prices-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--accent-color);
+  margin-bottom: 3rem;
+  text-shadow: 0px 4px 15px var(--glow-color);
+}
+
+.prices-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card-bg);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.price-item:hover {
+  border-color: var(--accent-light);
+  box-shadow: 0 5px 15px var(--glow-color);
+  transform: translateX(-5px);
+}
+
+.price-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.price-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--accent-light);
+}

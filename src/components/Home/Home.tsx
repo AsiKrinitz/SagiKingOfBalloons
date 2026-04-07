@@ -2,13 +2,16 @@ import { Link } from 'react-router-dom';
 import { categories } from '../../data/categories';
 import { Footer } from '../Footer/Footer';
 import './Home.css';
+import logoVideo from '../../images/Logo/sagiLogo.mp4';
 
 export function Home() {
   return (
     <div className="app-container">
       <header className="home-hero">
         <div className="home-hero-content">
-          <h1 className="home-headline">שגיא מלך הבלונים</h1>
+          <video className="home-logo-video" autoPlay loop muted playsInline>
+            <source src={logoVideo} type="video/mp4" />
+          </video>
           <p className="home-subtitle">עיצובים מיוחדים לכל אירוע</p>
         </div>
       </header>
