@@ -11,8 +11,8 @@ export function CategoryPage() {
   if (!category) {
     return (
       <div className="app-container" style={{ textAlign: 'center', padding: '10rem' }}>
-        <h2>Gallery Not Found</h2>
-        <button className="category-back-button" onClick={() => navigate('/')}>Return Home</button>
+        <h2>הגלריה לא נמצאה</h2>
+        <button className="category-back-button" onClick={() => navigate('/')}>חזרה לעמוד הבית</button>
       </div>
     );
   }
@@ -20,12 +20,12 @@ export function CategoryPage() {
   return (
     <div className="app-container">
       <header className="category-hero">
-        <button className="category-back-button" onClick={() => navigate(-1)}>← Back to Folders</button>
+        <button className="category-back-button" onClick={() => navigate(-1)}>← חזרה לגלריות</button>
         <div className="category-hero-content" style={{ textAlign: 'center' }}>
           <h1 className="category-headline">
             {category.title}
           </h1>
-          <p className="category-subtitle">{category.images.length} beautiful designs</p>
+          <p className="category-subtitle">{category.images.length} עיצובים מרהיבים</p>
         </div>
       </header>
 
