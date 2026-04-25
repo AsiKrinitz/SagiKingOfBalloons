@@ -1,0 +1,64 @@
+.asi-footer {
+  width: 100%;
+  padding: 15px 0;
+  background: rgba(18, 18, 18, 0.95);
+  border-top: 1px solid rgba(187, 134, 252, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+  font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  backdrop-filter: blur(10px);
+}
+
+.asi-footer-content p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.asi-link {
+  color: #bb86fc;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.asi-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  right: 0;
+  background: linear-gradient(90deg, #bb86fc, #03dac6);
+  transition: width 0.3s ease;
+}
+
+.asi-link:hover {
+  color: #03dac6;
+  text-shadow: 0 0 8px rgba(3, 218, 198, 0.4);
+}
+
+.asi-link:hover::after {
+  width: 100%;
+  right: 0;
+}
+
+/* Mobile optimizations */
+@media (max-width: 600px) {
+  .asi-footer {
+    padding: 12px 10px;
+  }
+  
+  .asi-footer-content p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+}

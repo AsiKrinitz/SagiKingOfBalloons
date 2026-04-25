@@ -5,6 +5,8 @@ import { Services } from './components/Services/Services';
 import { Prices } from './components/Prices/Prices';
 import { About } from './components/About/About';
 import { CategoryPage } from './components/CategoryPage/CategoryPage';
+import { AsiFooter } from './components/AsiFooter/AsiFooter';
+import { Contact } from './components/Contact/Contact';
 import './index.css';
 
 function App() {
@@ -16,8 +18,10 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/prices" element={<Prices />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/:id" element={<CategoryPage />} />
       </Routes>
+      <AsiFooter />
     </Router>
   );
 }

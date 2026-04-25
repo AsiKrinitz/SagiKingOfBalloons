@@ -21,6 +21,7 @@ export function Header() {
       <nav className={`global-nav ${isMenuOpen ? 'open' : ''}`}>
         <Link to="/services" className="nav-link" onClick={() => setIsMenuOpen(false)}>השירותים שלי</Link>
         <Link to="/prices" className="nav-link" onClick={() => setIsMenuOpen(false)}>מחירון</Link>
+        <Link to="/contact" className="nav-link" onClick={() => setIsMenuOpen(false)}>צור קשר</Link>
         <Link to="/about" className="nav-link" onClick={() => setIsMenuOpen(false)}>מי אני</Link>
       </nav>
       

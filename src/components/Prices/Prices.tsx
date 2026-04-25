@@ -15,7 +15,7 @@ export function Prices() {
         {pricesList.map((item) => (
           <div key={item.id} className="price-item">
             <span className="price-name">{item.title}</span>
-            <span className="price-value">₪{item.price}</span>
+            <span className="price-value">החל מ-₪{item.price}</span>
           </div>
         ))}
       </div>
