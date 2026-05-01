@@ -7,6 +7,9 @@ import { About } from './components/About/About';
 import { CategoryPage } from './components/CategoryPage/CategoryPage';
 import { AsiFooter } from './components/AsiFooter/AsiFooter';
 import { Contact } from './components/Contact/Contact';
+import { Accessibility } from './components/Accessibility/Accessibility';
+import { PrivacyPolicy } from './components/PrivacyPolicy/PrivacyPolicy';
+import { AccessibilityWidget } from './components/AccessibilityWidget/AccessibilityWidget';
 import './index.css';
 
 function App() {
@@ -20,8 +23,11 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/:id" element={<CategoryPage />} />
+        <Route path="/accessibility" element={<Accessibility />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
       </Routes>
       <AsiFooter />
+      <AccessibilityWidget />
     </Router>
   );
 }

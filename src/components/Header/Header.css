@@ -2,12 +2,13 @@
   width: 100%;
   padding: 1rem 2rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; /* Force everything to the right */
+  direction: ltr; /* Keep header logic LTR so flex-end = right */
   align-items: center;
   gap: 3rem;
   border-bottom: 1px solid rgba(212, 175, 55, 0.1);
-  position: relative; /* For mobile dropdown absolute positioning */
-  z-index: 50; /* Ensure it stays above other content */
+  position: relative;
+  z-index: 50;
 }
 
 .logo-link {

@@ -62,3 +62,27 @@
     line-height: 1.4;
   }
 }
+
+/* Legal links in AsiFooter */
+.legal-links {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 0.9rem;
+}
+
+.legal-links a {
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.legal-links a:hover {
+  color: #bb86fc;
+}
+
+.separator {
+  color: #555;
+}
